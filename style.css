@@ -1,0 +1,106 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: rgb(3, 122, 122) ;
+}
+.container{
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px;
+    position: absolute;
+    min-height: 100px;
+    transform: translate(-50%,-50%);
+}
+#todo{
+    position: relative;
+    padding: 30px 20px;
+}
+#todo input{
+    width: 75%;
+    height: 45px;
+    padding: 15px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 1px solid gray;
+    transition: .65s;
+}
+
+#todo input:focus{
+    outline: none;
+    border-color: #3d9ba1;
+    box-shadow: 0px 0px 10px 0px #066acd;
+}
+#todo button{
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: none;
+    color: #066acd;
+    cursor: pointer;
+    border: 1px solid #066acd;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    transition: .65s;
+}
+#todo button:hover{
+    background-color: #066acd;
+    color: white;
+    box-shadow: 0px 0px 10px 0px #066acd;
+}
+#todolist{
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding: 30px 20px;
+    margin-top: 10px;
+}
+
+.dotolist{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+}
+.dotolist span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+.dotolist button{
+    background-color: #0a2ea4;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
+.dotolist button .bx {
+    font-size: 23px;
+}
